@@ -6,22 +6,58 @@ import Button from "../components/buttons";
 import { useState } from "react";
 
 const Data = [
-  { Name: "Iphone-64-Red", Ram: 64, Color: "Red", Price: 72000 },
-  { Name: "Iphone-64-Green", Ram: 64, Color: "Green", Price: 80000 },
-  { Name: "Iphone-64-Indigo", Ram: 64, Color: "Indigo", Price: 82000 },
-  { Name: "Iphone-128-Red", Ram: 128, Color: "Red", Price: 91000 },
-  { Name: "Iphone-128-Green", Ram: 128, Color: "Green", Price: 110000 },
-  { Name: "Iphone-128-Indigo", Ram: 128, Color: "Indigo", Price: 100000 },
-  { Name: "Iphone-256-Red", Ram: 256, Color: "Red", Price: 120000 },
-  { Name: "Iphone-256-Green", Ram: 256, Color: "Green", Price: 140000 },
-  { Name: "Iphone-256-Indigo", Ram: 256, Color: "Indigo", Price: 130000 },
+  { Name: "Iphone-64-Red", Ram: 64, Color: "Red", Price: 72000, Quantity: 17 },
+  {
+    Name: "Iphone-64-Green",
+    Ram: 64,
+    Color: "Green",
+    Price: 80000,
+    Quantity: 12,
+  },
+  {
+    Name: "Iphone-64-Indigo",
+    Ram: 64,
+    Color: "Indigo",
+    Price: 82000,
+    Quantity: 15,
+  },
+  { Name: "Iphone-128-Red", Ram: 128, Color: "Red", Price: 91000, Quantity: 5 },
+  {
+    Name: "Iphone-128-Green",
+    Ram: 128,
+    Color: "Green",
+    Price: 110000,
+    Quantity: 1,
+  },
+  {
+    Name: "Iphone-128-Indigo",
+    Ram: 128,
+    Color: "Indigo",
+    Price: 100000,
+    Quantity: 12,
+  },
+  {
+    Name: "Iphone-256-Red",
+    Ram: 256,
+    Color: "Red",
+    Price: 120000,
+    Quantity: 16,
+  },
+  {
+    Name: "Iphone-256-Green",
+    Ram: 256,
+    Color: "Green",
+    Price: 140000,
+    Quantity: 0,
+  },
+  {
+    Name: "Iphone-256-Indigo",
+    Ram: 256,
+    Color: "Indigo",
+    Price: 130000,
+    Quantity: 0,
+  },
 ];
-
-const colorCode = {
-  Red: "bg-red-400",
-  Green: "bg-green-400",
-  Indigo: "bg-indigo-400",
-};
 
 export default function Home() {
   const [color, setColor] = useState("Red");

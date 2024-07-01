@@ -1,5 +1,11 @@
 import React from "react";
 
+const colorCode = {
+  Red: "bg-red-400",
+  Green: "bg-green-400",
+  Indigo: "bg-indigo-400",
+};
+
 type propsType = {
   Color: string;
   className: string;
